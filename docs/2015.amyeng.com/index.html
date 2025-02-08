@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>i want amy to...</title>
+<link href="resources/styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="resources/swfobject.js"></script>
+</head>
+<body bgcolor="#000000">
+	<div id="flashcontent" align="center">
+  <p>Please enable javascript and active content and flash movies <br />
+    or update your web browser to view the content of this website.</p>
+  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="images/get_flash_player.gif" alt="Get Adobe Flash Player" style="border: none;" /></a></p>
+	</div>
+
+	<script type="text/javascript">
+		// <![CDATA[
+		var so = new SWFObject("index.swf", "mainMovie", "960", "630", "9", "#000000");
+		so.addVariable("locationVar", getQueryParamValue("locationVar")); // this line is optional, but this example uses the variable and displays this text inside the flash movie
+		so.useExpressInstall('resources/expressInstall.swf');
+		so.write("flashcontent");
+		// ]]>
+	</script>
+</body>
+</html>
